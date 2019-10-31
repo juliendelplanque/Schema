@@ -29,5 +29,6 @@ SchUseValidator >> validate: anObject [
 	[
 		^ self block value: anObject
 	] on: Error
-	do: [ self signalInvalid: anObject ]
+	do: [ :error |
+		self signalInvalid: anObject becauseOfError: error ]
 ]

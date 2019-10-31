@@ -32,6 +32,11 @@ SchValidator >> signalInvalid: anObject [
 ]
 
 { #category : #error }
+SchValidator >> signalInvalid: anObject becauseOfError: error [
+	SchSchemaError signalForValidator: self invalidObject: anObject becauseOfError: error
+]
+
+{ #category : #error }
 SchValidator >> signalUnexpectedType: anObject [
 	SchUnexpectedTypeError signalForValidator: self invalidObject: anObject
 ]

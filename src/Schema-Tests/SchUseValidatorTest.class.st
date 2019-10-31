@@ -24,5 +24,6 @@ SchUseValidatorTest >> testValidate [
 	
 	self should: [ schema validate: (2@3) ] raise: SchSchemaError withExceptionDo: [ :error |
 		self assert: error validator equals: schema.
-		self assert: error invalidObject equals: (2@3) ]
+		self assert: error invalidObject equals: (2@3).
+		self assert: error becauseOfError class equals: MessageNotUnderstood ]
 ]

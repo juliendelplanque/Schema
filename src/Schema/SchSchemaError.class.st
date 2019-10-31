@@ -3,7 +3,8 @@ Class {
 	#superclass : #Error,
 	#instVars : [
 		'validator',
-		'invalidObject'
+		'invalidObject',
+		'becauseOfError'
 	],
 	#category : #'Schema-Errors'
 }
@@ -14,6 +15,25 @@ SchSchemaError class >> signalForValidator: validator invalidObject: invalidObje
 		validator: validator;
 		invalidObject: invalidObject;
 		signal
+]
+
+{ #category : #'instance creation' }
+SchSchemaError class >> signalForValidator: validator invalidObject: invalidObject becauseOfError: becauseOfError [
+	^ self new
+		validator: validator;
+		invalidObject: invalidObject;
+		becauseOfError: becauseOfError;
+		signal
+]
+
+{ #category : #accessing }
+SchSchemaError >> becauseOfError [
+	^ becauseOfError
+]
+
+{ #category : #accessing }
+SchSchemaError >> becauseOfError: anObject [
+	becauseOfError := anObject
 ]
 
 { #category : #accessing }
