@@ -20,3 +20,15 @@ SchObjectValidatorTest >> testValidate [
 		self assert: error validator equals: schema.
 		self assert: error invalidObject equals: anotherMock ]
 ]
+
+{ #category : #tests }
+SchObjectValidatorTest >> testValidateRxMatcher [
+	| schema |
+	schema := SchObjectValidator object: 'abbc+' asRegex.
+	
+	self assert: (schema validate: 'abbccc') equals: 'abbccc'.
+	
+	self should: [ schema validate: 'ab' ] raise: SchSchemaError withExceptionDo: [ :error |
+		self assert: error validator equals: schema.
+		self assert: error invalidObject equals: 'ab' ]
+]
