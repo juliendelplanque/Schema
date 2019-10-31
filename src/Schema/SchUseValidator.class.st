@@ -7,6 +7,13 @@ Class {
 	#category : #Schema
 }
 
+{ #category : #'instance creation' }
+SchUseValidator class >> block: block [
+	^ self new
+		block: block;
+		yourself
+]
+
 { #category : #accessing }
 SchUseValidator >> block [
 	^ block
