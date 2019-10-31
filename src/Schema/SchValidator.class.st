@@ -20,7 +20,10 @@ SchValidator >> isValid: anObject [
 	"Returns true if anObject is valid according to myself.
 	 Else returns false.
 	"
-	^ self subclassResponsibility
+	^ [
+		self validate: anObject.
+		true
+	] on: SchSchemaError do: [ false ]
 ]
 
 { #category : #error }
