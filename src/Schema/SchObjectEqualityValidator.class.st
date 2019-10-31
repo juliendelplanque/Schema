@@ -1,7 +1,7 @@
 Class {
 	#name : #SchObjectEqualityValidator,
 	#superclass : #SchObjectValidator,
-	#category : #Schema
+	#category : #'Schema-Validators'
 }
 
 { #category : #validation }

@@ -4,10 +4,10 @@ A SchObjectValidatorTest is a test class for testing the behavior of SchObjectVa
 Class {
 	#name : #SchObjectValidatorTest,
 	#superclass : #TestCase,
-	#category : #'Schema-Tests'
+	#category : #'Schema-Tests-Validators'
 }
 
-{ #category : #test }
+{ #category : #tests }
 SchObjectValidatorTest >> testValidate [
 	| mock schema anotherMock |
 	mock := SchMockObjectThatValidate new.

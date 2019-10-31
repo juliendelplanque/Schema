@@ -1,7 +1,7 @@
 Class {
 	#name : #SchStrictTypeValidator,
 	#superclass : #SchTypeValidator,
-	#category : #Schema
+	#category : #'Schema-Validators'
 }
 
 { #category : #validation }

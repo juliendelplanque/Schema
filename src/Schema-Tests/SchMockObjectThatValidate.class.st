@@ -6,7 +6,7 @@ An object is valid according to myself if it and are the same (identity equals).
 Class {
 	#name : #SchMockObjectThatValidate,
 	#superclass : #Object,
-	#category : #'Schema-Tests'
+	#category : #'Schema-Tests-Validators'
 }
 
 { #category : #validating }

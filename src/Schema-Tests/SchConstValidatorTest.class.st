@@ -4,10 +4,10 @@ A SchConstValidatorTest is a test class for testing the behavior of SchConstVali
 Class {
 	#name : #SchConstValidatorTest,
 	#superclass : #TestCase,
-	#category : #'Schema-Tests'
+	#category : #'Schema-Tests-Validators'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #tests }
 SchConstValidatorTest >> testValidate [
 	| schema |
 	schema := SchConstValidator validator: (SchUseValidator block: [ :x | x * 2 ]).

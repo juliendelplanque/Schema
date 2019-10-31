@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'expectedClass'
 	],
-	#category : #Schema
+	#category : #'Schema-Validators'
 }
 
 { #category : #'instance creation' }

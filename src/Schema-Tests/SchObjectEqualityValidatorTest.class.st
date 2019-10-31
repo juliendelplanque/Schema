@@ -4,10 +4,10 @@ A SchObjectEqualityValidatorTest is a test class for testing the behavior of Sch
 Class {
 	#name : #SchObjectEqualityValidatorTest,
 	#superclass : #TestCase,
-	#category : #'Schema-Tests'
+	#category : #'Schema-Tests-Validators'
 }
 
-{ #category : #test }
+{ #category : #tests }
 SchObjectEqualityValidatorTest >> testValidate [
 	| schema |
 	schema := SchObjectEqualityValidator object: 42.

@@ -4,7 +4,7 @@ A SchStrictTypeValidatorTest is a test class for testing the behavior of SchStri
 Class {
 	#name : #SchStrictTypeValidatorTest,
 	#superclass : #TestCase,
-	#category : #'Schema-Tests'
+	#category : #'Schema-Tests-Validators'
 }
 
 { #category : #tests }

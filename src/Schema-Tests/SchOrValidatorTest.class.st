@@ -4,10 +4,10 @@ A SchOrValidatorTest is a test class for testing the behavior of SchOrValidator
 Class {
 	#name : #SchOrValidatorTest,
 	#superclass : #TestCase,
-	#category : #'Schema-Tests'
+	#category : #'Schema-Tests-Validators'
 }
 
-{ #category : #test }
+{ #category : #tests }
 SchOrValidatorTest >> testValidate [
 	| schema |
 	schema := SchOrValidator new

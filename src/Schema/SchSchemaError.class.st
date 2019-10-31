@@ -5,7 +5,7 @@ Class {
 		'validator',
 		'invalidObject'
 	],
-	#category : #Schema
+	#category : #'Schema-Errors'
 }
 
 { #category : #'instance creation' }

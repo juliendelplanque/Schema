@@ -1,7 +1,7 @@
 Class {
 	#name : #SchOrValidator,
 	#superclass : #SchMultiDelegateValidator,
-	#category : #Schema
+	#category : #'Schema-Validators'
 }
 
 { #category : #validation }

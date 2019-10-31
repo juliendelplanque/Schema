@@ -4,10 +4,10 @@ A SchBlockValidatorTest is a test class for testing the behavior of SchBlockVali
 Class {
 	#name : #SchBlockValidatorTest,
 	#superclass : #TestCase,
-	#category : #'Schema-Tests'
+	#category : #'Schema-Tests-Validators'
 }
 
-{ #category : #test }
+{ #category : #tests }
 SchBlockValidatorTest >> testValidate [
 	| schema |
 	schema := SchBlockValidator block: [ :n | n > 0 ].

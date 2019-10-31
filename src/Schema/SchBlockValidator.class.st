@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'block'
 	],
-	#category : #Schema
+	#category : #'Schema-Validators'
 }
 
 { #category : #'instance creation' }
@@ -26,7 +26,7 @@ SchBlockValidator >> block: anObject [
 
 { #category : #validation }
 SchBlockValidator >> validate: anObject [
-	(self block value: anObject)
+	([ self block value: anObject ] on: Error do: [ false ])
 		ifFalse: [ self signalInvalid: anObject ].
 		
 	^ anObject

@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'validators'
 	],
-	#category : #Schema
+	#category : #'Schema-Validators'
 }
 
 { #category : #'instance creation' }

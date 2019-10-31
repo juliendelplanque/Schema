@@ -4,10 +4,10 @@ A SchTypeValidatorTest is a test class for testing the behavior of SchTypeValida
 Class {
 	#name : #SchTypeValidatorTest,
 	#superclass : #TestCase,
-	#category : #'Schema-Tests'
+	#category : #'Schema-Tests-Validators'
 }
 
-{ #category : #test }
+{ #category : #tests }
 SchTypeValidatorTest >> testValidate [
 	| schema |
 	schema := SchTypeValidator expectedClass: Integer.

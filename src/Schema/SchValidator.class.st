@@ -1,12 +1,36 @@
 Class {
 	#name : #SchValidator,
 	#superclass : #Object,
-	#category : #Schema
+	#category : #'Schema-Validators'
 }
+
+{ #category : #validation }
+SchValidator >> checkValidity: anObject [
+	"Verify that anObject is valid according to myself.
+	 If not, raise a SchSchemaError.
+	"
+	(self isValid: anObject)
+		ifTrue: [ ^ self ].
+	
+	self signalInvalid: anObject
+]
+
+{ #category : #testing }
+SchValidator >> isValid: anObject [
+	"Returns true if anObject is valid according to myself.
+	 Else returns false.
+	"
+	^ self subclassResponsibility
+]
 
 { #category : #error }
 SchValidator >> signalInvalid: anObject [
 	SchSchemaError signalForValidator: self invalidObject: anObject
+]
+
+{ #category : #error }
+SchValidator >> signalUnexpectedType: anObject [
+	SchUnexpectedTypeError signalForValidator: self invalidObject: anObject
 ]
 
 { #category : #validation }

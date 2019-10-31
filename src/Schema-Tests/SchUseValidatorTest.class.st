@@ -4,10 +4,10 @@ A SchUseValidatorTest is a test class for testing the behavior of SchUseValidato
 Class {
 	#name : #SchUseValidatorTest,
 	#superclass : #TestCase,
-	#category : #'Schema-Tests'
+	#category : #'Schema-Tests-Validators'
 }
 
-{ #category : #test }
+{ #category : #tests }
 SchUseValidatorTest >> testValidate [
 	| schema |
 	schema := SchUseValidator block: [ :x | x asInteger ].
