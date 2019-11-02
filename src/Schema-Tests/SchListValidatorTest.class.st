@@ -8,6 +8,15 @@ Class {
 }
 
 { #category : #tests }
+SchListValidatorTest >> testEmptyListIsValid [
+	| schema |
+	schema := SchListValidator validators: { SchTypeValidator expectedClass: Integer }.
+	
+	self assert: (schema isValid: #()).
+	self assert: (schema validate: #()) equals: #()
+]
+
+{ #category : #tests }
 SchListValidatorTest >> testValidate [
 	| schema |
 	schema := SchListValidator validators: { 
