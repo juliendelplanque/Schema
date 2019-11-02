@@ -20,6 +20,6 @@ SchMultiDelegateValidator >> validators [
 ]
 
 { #category : #accessing }
-SchMultiDelegateValidator >> validators: anObject [
-	validators := anObject
+SchMultiDelegateValidator >> validators: aCollection [
+	validators := aCollection collect: #asValidator
 ]

@@ -4,6 +4,11 @@ Class {
 	#category : #'Schema-Validators'
 }
 
+{ #category : #converting }
+SchValidator >> asValidator [
+	^ self
+]
+
 { #category : #validation }
 SchValidator >> checkValidity: anObject [
 	"Verify that anObject is valid according to myself.

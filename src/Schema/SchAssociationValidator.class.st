@@ -23,7 +23,7 @@ SchAssociationValidator >> keyValidator [
 
 { #category : #accessing }
 SchAssociationValidator >> keyValidator: anObject [
-	keyValidator := anObject
+	keyValidator := anObject asValidator
 ]
 
 { #category : #validation }
@@ -42,5 +42,5 @@ SchAssociationValidator >> valueValidator [
 
 { #category : #accessing }
 SchAssociationValidator >> valueValidator: anObject [
-	valueValidator := anObject
+	valueValidator := anObject asValidator
 ]

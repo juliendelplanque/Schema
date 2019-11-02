@@ -27,5 +27,5 @@ SchConstValidator >> validator [
 
 { #category : #accessing }
 SchConstValidator >> validator: anObject [
-	validator := anObject
+	validator := anObject asValidator
 ]
